@@ -1,0 +1,117 @@
+
+body{
+  background-color:#0c0c0c;
+  color:#fff;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h2{
+  font-size:2.6rem;
+  font-weight: bold;
+}
+
+.container{
+  max-width:1360px;
+}
+
+#pomodoro{
+  margin-top:10vh;
+}
+
+.amount{
+  font-size:2.6rem;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently*/
+}
+
+#break-container{
+  margin:auto;
+  text-align: center;
+}
+
+#session-container{
+  margin:0px auto 0px auto;
+  text-align: center;
+}
+.modify{
+padding:0px 40px 0px 40px;
+margin:0px 0px 0px 0px;
+
+}
+
+.modify i{
+  transition: filter .5s ease-in-out;
+-webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+filter: grayscale(0%); /* FF 35+ */
+}
+
+.modify i:hover{
+  color: #99cc00;
+  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+  cursor:pointer;
+}
+
+#timer-label{
+  color:#757575;
+  font-size:58px;
+}
+#time-left{
+  font-size:58px;
+  font-weight: bolder;
+}
+
+#controls-container{
+  margin:30px auto 0px auto;
+  font-size:45px;
+}
+
+#controls-container div{
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently*/
+}
+#controls-container div:hover{
+  color:#3a3a3a;
+  cursor:pointer;
+}
+#author{
+  color: #3b3b3b;
+  margin:30px auto 0px auto;
+}
+/*********RESPONSIVE DISPLAY OPTIMIZATIONS************/
+
+@media only screen and (max-width: 500px) {
+
+  #pomodoro{
+    margin-top:0vh;
+    transform: scale(0.9 );
+  }
+  h2{
+    font-size:50px;
+  }
+  #controls-container{
+    font-size:35px;
+  }
+  #break-label{
+    margin-top:0px;
+  }
+  #session-container{
+    margin-top:40px;
+  }
+
+}
+
+@media only screen and (max-width: 770px) {
+  .col-sm-6{
+    min-width:100%;
+  }
+
+}
