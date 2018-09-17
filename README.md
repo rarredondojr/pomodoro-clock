@@ -1,4 +1,4 @@
-#Pomodoro clock
+# Pomodoro clock
 
 A basic pomodoro clock written in REACT
 
